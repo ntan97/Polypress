@@ -10,8 +10,8 @@ What is this not:
 - A finished product, in an way, shape or form.
 
 What are the goals for this?
-1. Create a skeleton theme that includes all the default styles and functionality of Polymer directly intergrated with WordPress
-2. Build off of and continuously improve as both WordPress and Polymer advance.
+- Create a skeleton theme that includes all the default styles and functionality of Polymer directly intergrated with WordPress
+- Build off of and continuously improve as both WordPress and Polymer advance.
 
 Why?
 - Why not.

@@ -8,7 +8,6 @@ What is this:
 
 What is this not:
 - A finished product, in an way, shape or form.
-- 
 
 What are the goals for this?
 1. Create a skeleton theme that includes all the default styles and functionality of Polymer directly intergrated with WordPress
@@ -16,3 +15,8 @@ What are the goals for this?
 
 Why?
 Why not.
+
+Whats Next?
+Add in all basic theme files, and create navigation options
+Integrate with different Google APIs.
+Figure out what's next after what's next.

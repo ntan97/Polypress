@@ -1,12 +1,12 @@
 # Polypress
 A basic theme template to integrate Polymer 1.0 to WordPress. This is a work in progress, and any help and pull requests will be accepted
 
-What is this:
+What this is:
 - A work in progress.
 - A failure in progress.
 - An attempt to combine some of the amazing Polymer APIS and Google things, with all the beautiful WordPress things we all know and love.
 
-What is this not:
+What this is not:
 - A finished product, in an way, shape or form.
 
 What are the goals for this?

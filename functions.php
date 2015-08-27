@@ -1,9 +1,11 @@
 <?php
   // WP Polymer Nav
-  require_once 'inc/wp_polymer_nav.php';
+    require_once 'inc/wp_polymer_nav.php';
 
   function polypress_styles () {
-    wp_enqueue_script('webcomponents', get_template_directory_uri().'/bower_components/webcomponentsjs/webcomponents.js');
+    wp_enqueue_script( 'webcomponents', get_template_directory_uri().'/bower_components/webcomponentsjs/webcomponents.js' );
+
+    wp_enqueue_style( 'style', get_stylesheet_uri() );
   }
   add_action('wp_enqueue_scripts', 'polypress_styles');
 
@@ -22,4 +24,22 @@
     add_theme_support('menus');
   }
   add_action('init', 'theme_support');
+
+
+require_once('/inc/functions/polypress_support.php');
+
+$polymer_support = array(
+  'paper-toolbar',
+  'roboto',
+  'paper-menu',
+  'paper-item',
+  'iron-flex-layout',
+  'iron-icons',
+  'iron-menu-behavior',
+  'iron-component-page',
+  'paper-icon-button',
+);
+
+add_polymer_support($polymer_support);
+
  ?>

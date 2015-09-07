@@ -14,3 +14,21 @@ core-toolbar {
   background-color: #03a9f4;
   color: white;
 }
+
+paper-menu {
+  a {
+
+    color: white;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    &:active, &:hover, &:focus {
+      color: white;
+      text-decoration: none;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}

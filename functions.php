@@ -32,12 +32,18 @@ $polymer_support = array(
   'paper-toolbar',
   'roboto',
   'paper-menu',
+  'paper-menu-button',
   'paper-item',
   'iron-flex-layout',
   'iron-icons',
   'iron-menu-behavior',
-  'iron-component-page',
   'paper-icon-button',
+  'paper-drawer-panel',
+  'paper-header-panel',
+  'paper-card',
+  'paper-button',
+  'paper-styles'
+
 );
 
 add_polymer_support($polymer_support);

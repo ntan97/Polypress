@@ -79,7 +79,8 @@
     "paper-toggle-button": "PolymerElements/paper-toggle-button#^1.0.0",
     "paper-toolbar": "PolymerElements/paper-toolbar#^1.0.0",
     "platinum-push-messaging": "PolymerElements/platinum-push-messaging#~1.0.0",
-    "platinum-sw": "PolymerElements/platinum-sw#~1.0.1"
+    "platinum-sw": "PolymerElements/platinum-sw#~1.0.1",
+    "paper-card": "PolymerElements/paper-card#1.0.0"
   },
   "authors": [
     "Nathan Gould <ntan97@gmail.com>"

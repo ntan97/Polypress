@@ -15,7 +15,7 @@ core-toolbar {
   color: white;
 }
 
-paper-menu {
+paper-menu, paper-toolbar {
   a {
 
     color: white;
@@ -30,5 +30,11 @@ paper-menu {
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
     }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  paper-menu-button {
+    display: none;
   }
 }

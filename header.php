@@ -1,19 +1,16 @@
 <!doctype HTML>
 <html <?php language_attributes(); ?>>
-
 <head>
-
   <title><?php wp_title(); ?></title>
-
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-
   <?php wp_head(); ?>
 </head>
 
 <body unresolved <?php body_class(array('fullbleed', 'layout', 'vertical')); ?>>
+
   <paper-drawer-panel>
     <paper-header-panel drawer>
-      <paper-toolbar role="toolbar"></paper-toolbar>
+      <paper-toolbar></paper-toolbar>
         <?php
           $args = array(
             'menu'  => 'header_menu',
@@ -31,4 +28,5 @@
         <paper-menu-button>
           <paper-icon-button icon="menu" class="dropdown-trigger"></paper-icon-button>
         </paper-menu-button>
+        <h2><a href="<?php the_permalink(); ?>"><?php echo get_bloginfo('sitename'); ?></a></h2>
       </paper-toolbar>

@@ -7,10 +7,8 @@
 </head>
 
 <body unresolved <?php body_class(array('fullbleed', 'layout', 'vertical')); ?>>
-
-  <paper-drawer-panel>
-    <paper-header-panel drawer>
-      <paper-toolbar></paper-toolbar>
+  <paper-drawer-panel force-narrow>
+    <paper-header-panel medium drawer transition>
         <?php
           $args = array(
             'menu'  => 'header_menu',
@@ -23,10 +21,8 @@
           wp_nav_menu($args);
         ?>
     </paper-header-panel>
-    <paper-header-panel main>
+    <paper-header-panel class="flex" main>
       <paper-toolbar>
-        <paper-menu-button>
-          <paper-icon-button icon="menu" class="dropdown-trigger"></paper-icon-button>
-        </paper-menu-button>
-        <h2><a href="<?php the_permalink(); ?>"><?php echo get_bloginfo('sitename'); ?></a></h2>
+        <paper-icon-button icon="menu" paper-drawer-toggle ></paper-icon-button>
+        <h2><a href="<?php echo home_url(); ?>"><?php echo get_bloginfo('sitename'); ?></a></h2>
       </paper-toolbar>

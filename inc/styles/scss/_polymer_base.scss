@@ -15,9 +15,13 @@ core-toolbar {
   color: white;
 }
 
+paper-menu {
+  height:100vh;
+  max-height: 100%;
+}
+
 paper-menu, paper-toolbar {
   a {
-
     color: white;
     text-decoration: none;
     -webkit-transition: all 0.3s ease-in-out;
@@ -33,8 +37,20 @@ paper-menu, paper-toolbar {
   }
 }
 
-@media screen and (min-width: 576px) {
-  paper-menu-button {
-    display: none;
+paper-button {
+
+}
+
+paper-card {
+  margin: 16px;
+  background: none;
+  & >paper-material {
+    background: white;
+  }
+  .card-actions {
+    a {
+      color: #000;
+      text-decoration: none;
+    }
   }
 }

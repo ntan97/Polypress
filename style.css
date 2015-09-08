@@ -6,7 +6,11 @@ core-header-panel { height: 100%; overflow: auto; -webkit-overflow-scrolling: to
 
 core-toolbar { background-color: #03a9f4; color: white; }
 
+paper-menu { height: 100vh; max-height: 100%; }
+
 paper-menu a, paper-toolbar a { color: white; text-decoration: none; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 paper-menu a:active, paper-menu a:hover, paper-menu a:focus, paper-toolbar a:active, paper-toolbar a:hover, paper-toolbar a:focus { color: white; text-decoration: none; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 
-@media screen and (min-width: 576px) { paper-menu-button { display: none; } }
+paper-card { margin: 16px; background: none; }
+paper-card > paper-material { background: white; }
+paper-card .card-actions a { color: #000; text-decoration: none; }

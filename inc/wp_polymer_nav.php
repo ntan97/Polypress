@@ -35,7 +35,7 @@ class polymer_walker_nav_menu extends Walker_Nav_Menu {
         // Display this element.
         if ( is_object( $args[0] ) )
            $args[0]->has_children = ! empty( $children_elements[ $element->$id_field ] );
-        parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
+          parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
     }
 
 } ?>

@@ -46,6 +46,7 @@ $polymer_support = array(
   'iron-component-page',
   'paper-material',
   'paper-page',
+  'paper-fab'
 
 );
 

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
   <div class="content fit">
-    <paper-card>
+    <paper-page>
       <div class="card-content" heading="<?php the_title(); ?>">
       	<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
       		the_content(); ?>
@@ -10,8 +10,12 @@
       	<!-- no posts found -->
       	<?php endif; ?>
 
-        <paper-button raised><iron-icon style="margin-right: 20px;" icon="create"></iron-icon><?php edit_post_link('Edit', '', ''); ?></paper-button>
       </div>
-    </paper-card>
+      <?php if (is_user_logged_in()) { ?>
+        <div class="card-actions">
+          <paper-button><iron-icon style="margin-right: 20px;" icon="create"></iron-icon><?php edit_post_link('Edit', '', ''); ?></paper-button>
+        </div>
+      <?php } ?>
+    </paper-page>
   </div>
 <?php get_footer(); ?>

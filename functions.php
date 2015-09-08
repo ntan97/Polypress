@@ -43,7 +43,9 @@ $polymer_support = array(
   'paper-card',
   'paper-button',
   'paper-styles',
-  'iron-component-page'
+  'iron-component-page',
+  'paper-material',
+  'paper-page',
 
 );
 

@@ -1,6 +1,6 @@
 <?php
   // WP Polymer Nav
-    require_once 'inc/wp_polymer_nav.php';
+  require_once 'inc/wp_polymer_nav.php';
 
   function polypress_styles () {
     wp_enqueue_script( 'webcomponents', get_template_directory_uri().'/bower_components/webcomponentsjs/webcomponents.js' );
@@ -47,7 +47,6 @@ $polymer_support = array(
   'paper-material',
   'paper-page',
   'paper-fab'
-
 );
 
 add_polymer_support($polymer_support);

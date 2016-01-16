@@ -1,22 +1,62 @@
 # Polypress
-A basic theme template to integrate Polymer 1.0 to WordPress. This is a work in progress, and any help and pull requests will be accepted
 
-What this is:
-- A work in progress.
-- A failure in progress.
-- An attempt to combine some of the amazing Polymer APIS and Google things, with all the beautiful WordPress things we all know and love.
+A start of a skeleton theme to integrate Google's Polymer Web Components with WordPress
 
-What this is not:
-- A finished product, in an way, shape or form.
+## Notes
 
-What are the goals for this?
-- Create a skeleton theme that includes all the default styles and functionality of Polymer directly intergrated with WordPress
-- Build off of and continuously improve as both WordPress and Polymer advance.
+Here's a couple notes to keep in mind:
 
-Why?
-- Why not.
+- This is not a finished product.
+- This will be consistently worked on till I likely get bored.
+- Any help or feedback will be accepted.
 
-Whats Next?
+## Usage
+
+Before you get going you need to setup a few things.
+
+### Setting up Polymer
+
+To setup Polymer it's really simple. 
+
+If you havn't installed bower yet, do that first.
+
+I've included a bower.json.default. Rename to bower.json and run
+
+```
+bower install
+```
+
+This will initialize your node_modules folder in the root of the theme, and download all of Polymer and it's default web components.
+
+### Setting up WordPress
+
+To start to use the extra components you need to access you have to include add support to WordPress:
+
+``` PHP
+add_theme_support('polymer');
+```
+
+This is included by default in the skeleton theme. 
+
+Now you can easily add any web component included in Polymer.
+
+```PHP
+
+// a couple poymer elements for examples
+$polymer_support = array(
+  'paper-toolbar',
+  'roboto',
+  'paper-menu'
+);
+
+add_polymer_support($polymer_support);
+```
+
+## Seperate Components
+- [WP_Polymer_Nav_Walker](https://github.com/ntan97/WP_Polymer_Nav_Walker)
+
+## Future Additions
 - Add in all basic theme files, and create navigation options
 - Integrate with different Google APIs.
-- Figure out what's next after what's next.
+- Add in default global theme options.
+- Figure out what's next.

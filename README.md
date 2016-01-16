@@ -41,7 +41,6 @@ This is included by default in the skeleton theme.
 Now you can easily add any web component included in Polymer.
 
 ```PHP
-
 // a couple poymer elements for examples
 $polymer_support = array(
   'paper-toolbar',
